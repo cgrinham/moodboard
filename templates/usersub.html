@@ -1,0 +1,56 @@
+$def with (content)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$content.user's $content.title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script src="/static/js/jquery-2.1.4.min.js"></script>
+    <script async src="/static/js/nav.js"></script>
+    <script src="/static/js/imagefunctions.js"></script>
+    <script src="/static/js/magnific.js"></script>
+</head>
+<body>
+<div id="title">
+    <h1><a href="/">moodboard</a>:<a href="/$content.user">$content.user</a></h1>
+    <h2>$content.numberofimages images</h2>
+</div>
+<div id="navbox">
+    <ul id="pages">
+        $for folder in content.folderlist:
+            <li id="id-$folder"><a href="$folder.lower()">$folder</a></li>
+    </ul>
+</div> 
+
+    $:content
+
+<div id="footer">
+    <div id="info">the image hoarder's paradise</div>
+    <div id="nav">
+
+$if content.session.loggedin == True:
+    $if content.user == content.session.username:
+        <a href="/account">account</a>
+    $else:
+        $if content.user in content.session.favourites:
+            <a id="unfavourite" data-user="$content.user" href="#">favourited</a>
+        $else:
+            <a id="favourite" data-user="$content.user" href="#favourite">favourite</a>
+
+$if content.prevpage != "0" or content.nextpage != "0":
+    • 
+
+$if content.prevpage != "0":
+    <a id="prev" href="?page=$content.prevpage">Previous</a>
+
+$if content.prevpage != "0" and content.nextpage != "0":
+    • 
+
+$if content.nextpage != "0":
+    <a id="next" href="?page=$content.nextpage">Next</a>
+
+
+    </div>
+</div>
+</body>
+</html>

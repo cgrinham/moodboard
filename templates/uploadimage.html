@@ -1,0 +1,14 @@
+$def with (pagetitle, loggedin, form, message)
+
+$var pagetitle = pagetitle
+$var loggedin = loggedin
+
+<div class="container">
+
+    <form name="uploadimage" method="post"> 
+        $:form.render()
+    </form>
+
+<div id="message" style="text-align:center">Message: $message</div>
+
+</div>

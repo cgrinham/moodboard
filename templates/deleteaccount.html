@@ -1,0 +1,16 @@
+$def with (pagetitle, loggedin, form, message)
+
+$var pagetitle = pagetitle
+$var loggedin = loggedin
+
+<div class="container">
+
+Are you sure you want to delete your account? This action CAN NOT BE UNDONE.
+
+    <form name="deleteaccount" method="post"> 
+        $:form.render()
+    </form>
+
+<div id="message" style="text-align:center">Message: $message</div>
+
+</div>

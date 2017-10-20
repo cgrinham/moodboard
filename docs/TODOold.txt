@@ -1,0 +1,64 @@
+TODO.txt
+
+Intro page
+
+CREATE actual logfile with per operation times
+
+DONE - template it?
+
+Add image sizes in overlay that can be hovered
+
+
+Check if thumbnail exists, if not use original and add image to be processed?
+
+Store settings in sqlite
+
+Thumbnail size in settings - UNLESS ITS SMALLER  * Done, needs testing
+
+Make settings editable from site
+
+Add image to database, for tags
+
+
+MAIN WEBSITE:
+Directory of moodboards
+People can opt-in to the directory
+Get latest image for each user
+
+Javascript password validation
+
+USER'S FUNCTIONS:
+*Log in
+*Delete account
+Delete all images
+Edit Settings
+Change password
+Change username - change folder name too
+Favourite Moodboards
+List favourite boards
+Notifications when your board is notified
+Rotate image
+
+ADMIN FUNCTIONS:
+List users and options to delete
+
+CLIENT/SERVER UPLOADER
+
+Create client/server to sync images over internet
+Create on-the-fly website
+
+CLient connects to the server, client tells server its username and password, server checks [clientname].config to find out where the client's files are saved
+
+
+SQLITE LAYOUT
+
+USERS
+-ID
+-Username
+-Password
+-Salt
+
+IMAGES
+-ID
+-filename
+-Tags as list (input as comma seperated tags)

@@ -1,0 +1,131 @@
+TODO.txt
+
+
+----------- IMPORTANT
+
+Delete Image
+
+Change username folders to user id folders
+
+Put verification in session
+
+All favourites page
+
+404 page user not found
+
+Add user functions to subuser pages
+
+Disallow multiple accounts for email address
+
+favicon/icon
+
+migrate to MessagePack instead of pickle?
+
+Implement gifs and webm
+
+image operations on own images - rotate and delete
+
+image uploader
+
+Run server NOT as root.
+
+  shades: [
+["FF0000", "Red"],
+["FFA500", "Orange"],
+["FFFF00", "Yellow"],
+["008000", "Green"],
+["0000FF", "Blue"],
+["EE82EE", "Violet"],
+["A52A2A", "Brown"],
+["000000", "Black"],
+["808080", "Grey"],
+["FFFFFF", "White"]
+]
+  shades: ['#FF0000', '#FFA500', '#FFFF00', '#008000', '#0000FF', '#EE82EE', '#A52A2A', '#000000', '#808080', '#FFFFFF']
+  shade hues: [0.0, 0.10784313725490197, 0.16666666666666666, 0.3333333333333333, 0.6666666666666666, 0.8333333333333334, 0.0, 0.0, 0.0, 0.0]
+  0.0, 38.82352941176471, 60.0, 120.0, 240.0, 300.0, 0.0, 0.0, 0.0, 0.0
+
+  red 0
+  orange 17
+  yellow 40
+  green 65
+  turquoise 168
+  blue 189
+  indigo 257
+  violet 300
+  red 335
+
+  red: 335 - 360/0 - 17
+  orange: 17 - 40
+  yellow: 40 - 65
+  green: 65 - 168
+  blue: 168 - 257
+  indigo: 257 - 300
+  violet: 300 - 335
+
+
+----------- LESS IMPORTANT
+
+Type in colour for autosuggestions
+-- Tag detailed colour names with less specific names e.g. gainsboro - 
+
+
+Account deleted page
+
+Consolidate userindex and usersub layouts
+
+Intro page
+
+CREATE actual logfile with per operation times
+
+Add image sizes in overlay that can be hovered
+
+
+
+
+MAIN WEBSITE:
+People can opt-out of the directory
+
+Javascript password validation
+
+
+USER'S FUNCTIONS:
+Delete all images
+Edit Settings
+Change password
+Change username - change folder name too
+Favourite Moodboards
+List favourite boards
+Notifications when your board is favourited
+Rotate image
+
+ADMIN FUNCTIONS:
+List users and options to delete
+
+SQLITE LAYOUT
+
+IMAGES
+-ID
+-filename
+-Tags as list (input as comma seperated tags)
+
+
+DONE:
+Add image to database, for tags
+Move image function
+handle no folders
+move user folders into "users" folder
+CHECK USERNAMES BEFORE NEW USER CREATION
+Check if thumbnail exists, if not use original and add image to be processed? - Thumbnail crawler
+Create client/server to sync images over internet
+Create on-the-fly website
+Fix username check
+Add email verification
+Fix permissions for new user folder
+favourite boards
+Log user out when they delete their account!
+HANDLE NO FAVOURITES
+Finish favourites feature!
+load favourites into session on login
+Resend email verification in account page
+If user is not verified, show warning in account settings

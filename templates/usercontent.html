@@ -1,0 +1,38 @@
+$def with (imagelist, imagerange, numberofimages, prevpage, nextpage, folderlist, user, session)
+
+$var title: Moodboard $imagerange
+$var nextpage: $nextpage
+$var prevpage: $prevpage
+$var numberofimages: $numberofimages
+$var folderlist = folderlist[0]
+$var user = user
+$var session = session
+
+$if session.username == user:
+    $for image in imagelist:
+        <div class="userimage-container" data-absimage="static/users/$user/images/$image">
+            <div class="userimage-controls">
+                <a href="#"><img class="delete" src="/static/img/delete2.png" alt="Delete Image" title="Delete Image"></a>
+                <ul class="mover">
+                    <li>
+                        <img src="/static/img/move.png" alt="move">
+                        <div>
+                            <select class="move" name="move">
+                                <option value="">Move to...</option>
+                                $for folder in folderlist[1]:
+                                    <option value="$folder">$folder</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#"><img class="rotate_cw" src="/static/img/rotate_cw.png" alt="Rotate Clockwise" title="Rotate Clockwise"></a>
+                <a href="#"><img class="rotate_ccw" src="/static/img/rotate_ccw.png" alt="Rotate Anti-Clockwise" title="Rotate Anti-clockwise"></a>
+            </div>
+            <a class="userimage-link" href="../static/users/$user/images/$image">
+                <img class="mb-image" src="../static/users/$user/images/thumbs/$image" alt="">
+            </a>
+        </div>
+$else:
+    $for image in imagelist:
+        <a class="image-link" href="../static/users/$user/images/$image"><img class="mb-image" src="../static/users/$user/images/thumbs/$image" alt=""></a>
+

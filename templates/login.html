@@ -1,0 +1,14 @@
+$def with (pagetitle, loggedin)
+
+$var pagetitle = pagetitle
+$var loggedin = loggedin
+
+<div id="loginform">
+    <form action="Login" method="POST">
+    <fieldset>
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit" value="Login">
+    </fieldset>
+    </form>
+</div>

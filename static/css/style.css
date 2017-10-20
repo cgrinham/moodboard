@@ -1,0 +1,371 @@
+body, html {margin:0; padding:0; font-family: sans-serif;}
+
+/* Site Wide Styles */
+
+.container {
+	width:980px;
+	margin: 100px auto 0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #eee;
+	border-radius: 20px;
+	padding:10px;
+}
+
+/* HOME PAGE */
+#userslist {
+	width: 100%;
+}
+
+.usertile {
+	height: 350px;
+	float: left;
+	position: relative;
+	margin-top:1px;
+	margin-left:1px;
+}
+
+.usertile img {
+	max-height:350px;
+	max-width: 100%;
+}
+
+.userlabel a, .userlabel a:visited {
+	text-decoration: none;
+	color:#eee;
+}
+
+.userlabel {
+    color: #eee;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 26px;
+	font-weight: lighter;
+    padding:5px;
+    box-sizing:border-box;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#actionbuttons {
+	float:right;
+	margin-right:20px;
+	font-size: 1.2em;
+}
+
+#actionbuttons a {color:black; text-decoration:none;}
+
+/* NEW USERS PAGE */
+#newuserform, #loginform {
+	width:50%;
+	margin: 50px auto 0;
+}
+
+fieldset {
+	text-align: center;
+	border-radius: 20px;
+	padding-top:30px;
+	border-style: solid;
+}
+
+input[type="text"], input[type="password"] {
+	font-size: 20px;
+	border-style: none;
+	border-radius: 10px;
+	background-color: #eee;
+	padding:5px 10px;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	font-size: 20px;
+	border-style: none;
+	border-radius: 10px;
+	background-color: #ccc;
+	color:#fff;
+	padding:5px 10px;
+	margin-bottom: 10px;
+}
+
+#newuserform #password_again {
+	background-color: #d00;
+}
+
+
+#footer {
+	width: 100%; 
+	position:fixed; 
+	bottom:0px; 
+	background-color: rgba(255,255,255, 0.8); 
+	font-family:sans-serif;
+	padding-left:10px;
+	padding-top:5px;
+	height:1.4em;
+}
+
+#info {
+	max-width:90%;
+	float:left;
+	line-height: 1.4em;
+}
+
+#nav {
+	margin-right:20px;
+	float:right;
+	font-size:1.2em; 
+}
+
+#nav a {color:black; text-decoration:none;}
+
+
+/* CSS DROPDOWN */
+#colourpicker {
+	float:right;
+    list-style:none;
+    margin: 0;
+    font-size: 1.2em;
+    display: block;
+}
+
+#colourpicker li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+
+#colourpicker a{
+    display:block;
+    text-decoration:none;
+}
+
+#colourpicker a:hover{
+    color:#fff;
+}
+
+/*--- DROPDOWN ---*/
+#colourpicker ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    display:none; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    right:-10px;
+}
+#colourpicker ul li{
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+    background-color: rgba(255,255,255,0.5);
+}
+#colourpicker ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+    padding:5px;
+}
+#colourpicker li:hover ul{ /* Display the dropdown on hover */
+    display:block; /* Bring back on-screen when needed */
+    bottom:100%;
+}
+#colourpicker li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    text-decoration:underline;
+}
+#colourpicker li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#colourpicker li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+}
+
+#colourpicker a, #colourpicker a:visited {
+	color: #000;
+}
+
+/* END CSS DROPDOWN */
+
+
+/* User Image Controls */
+.userimage-container {
+    position: relative;
+    float: left;
+}
+
+
+.userimage-controls {
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    padding: 0 2px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+
+.userimage-container:hover .userimage-controls {
+    display: block;
+}
+
+.rotate_cw, .rotate_ccw {
+	padding: 5px 0 0;
+    display: inline-block;
+    width: 40px
+}
+
+/* Image Mover */
+.userimage-controls .mover {
+    list-style:none;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.userimage-controls .mover li {
+	padding: 5px 0 0;
+}
+
+.userimage-controls .mover li div {
+    position:absolute;
+    left:0;
+    bottom: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.userimage-controls .mover:hover div {
+    display: block;
+}
+
+.userimage-controls .mover div:hover {
+    display: block;
+}
+
+
+
+.mb-image {
+	max-height:350px;
+	max-width: 100%;
+	margin-top:1px;
+	margin-left:1px;
+	vertical-align: top;
+	z-index:0;
+	float:left;
+}
+
+
+#title {
+	position: fixed;
+	top:10px;
+	left: 20px;
+	z-index: 11;
+}
+
+h1 {
+	margin: 5px 0 0;
+	color: white;
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.6);
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:visited { color: white; }
+
+h2 {
+	margin: 0;
+	color: white;
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.6);
+}
+
+/* Favourites */
+
+.remove-favourite { 
+	width:20px;
+	float:right;
+	cursor: pointer;
+}
+
+/* NEW STUFF */
+
+#navbox {
+	width:100%;
+	height: 50px;
+	top:0;
+	padding-left: 20px;
+	position:fixed;
+	font-family: sans-serif;
+	z-index: 10;
+}
+
+#pages {
+	background: rgba(255,255,255, 0.8);
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	margin: 0 50px 0 0;
+	padding:10px 5px 0 5px;
+	list-style-type:none;
+	float: right;
+	font-size: 2em;
+	font-weight: lighter;
+	height: 45px;
+	display:block;
+	text-transform: lowercase;
+}
+
+#pages li {
+	display: inline;
+	padding: 12px 20px 5px 20px;
+}
+
+#pages li:hover {
+	border-style:solid;
+	border-color: #666;
+	border-width: 0 0 1px 0;
+}
+
+#pages a {
+	color:#444;
+	text-decoration: none;
+}
+/*
+@media screen and (max-width:767px) {
+	#pages li {display: none;}
+
+	#pages:hover li {display:block;}
+}*/
+
+@media screen and (max-width:600px) {
+	#navbox {
+		display: none;
+	}
+}
+
+@media screen and (max-width:400px) {
+	#info {
+		display:none;
+	}
+
+	img {
+		max-height: unset;
+	}
+}
+
+
+/* Charts */
+
+#charts {
+    width:90%;
+    margin: 0 auto;
+}
+
+#charts div img {
+    height: 650px;
+    margin:0 auto;
+    display: block;
+}
+

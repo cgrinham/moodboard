@@ -1,0 +1,23 @@
+$def with (pagetitle, form, loggedin)
+
+$var pagetitle = pagetitle
+$var loggedin = loggedin
+
+<div id="newuserform">
+    <form name="main" method="post"> 
+    $if not form.valid: <p class="error">Please correct the following errors:</p>
+    $:form.render()
+    <input type="submit" />
+    </form>
+</div>
+
+<!--<div id="newuserform">
+    <form action="newuser" method="POST">
+    <fieldset>
+        <label for="newusername">Username:</label><input type="text" name="username"><br>
+        <label for="email">Email Address:</label><input type="email" name="email"><br>
+        <label for="password">Password:</label><input type="password" name="password"><br>
+        <input type="submit">
+    </fieldset>
+    </form>
+</div>-->

@@ -1,0 +1,552 @@
+94.143.253.117:47998 - - [21/Nov/2014 16:27:21] "HTTP/1.1 GET /" - 200 OK
+94.143.253.117:47998 - - [21/Nov/2014 16:27:21] "HTTP/1.1 GET /static/css/style.css" - 200 
+94.143.253.117:39161 - - [21/Nov/2014 16:27:21] "HTTP/1.1 GET /static/js/imagefunctions.js" - 200 
+94.143.253.117:39161 - - [21/Nov/2014 16:27:22] "HTTP/1.1 GET /static/users/inpala/images/tumblr_neyzpin1ry1qjpeg7o1_1280.jpg" - 200 
+94.143.253.117:47998 - - [21/Nov/2014 16:27:22] "HTTP/1.1 GET /static/users/sunra/images/Cesar-Manrique-c-Alastair-Philip-Wiper-17.jpg" - 200 
+94.143.253.117:47633 - - [21/Nov/2014 16:27:22] "HTTP/1.1 GET /static/users/damarus/images/Alethiometer1.jpg" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/ztzt/ztz/images'
+
+220.180.238.134:10108 - - [21/Nov/2014 19:53:12] "HTTP/1.1 GET /ztzt/ztz/zt.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+220.180.238.134:10109 - - [21/Nov/2014 19:53:13] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+220.180.238.134:10110 - - [21/Nov/2014 19:53:14] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+220.180.238.134:10111 - - [21/Nov/2014 19:53:15] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/axax/axa/images'
+
+140.114.78.98:49224 - - [21/Nov/2014 22:25:35] "HTTP/1.1 GET /axax/axa/ax.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+140.114.78.98:49350 - - [21/Nov/2014 22:25:36] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+140.114.78.98:49495 - - [21/Nov/2014 22:25:37] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+140.114.78.98:49618 - - [21/Nov/2014 22:25:38] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/recordings/theme/images'
+
+46.165.220.215:56917 - - [22/Nov/2014 05:52:19] "HTTP/1.1 GET /recordings/theme/iefixes.css" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/kxkx/kxk/images'
+
+118.174.3.213:54956 - - [22/Nov/2014 07:12:24] "HTTP/1.1 GET /kxkx/kxk/kx.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+118.174.3.213:55070 - - [22/Nov/2014 07:12:24] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+118.174.3.213:55179 - - [22/Nov/2014 07:12:25] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+118.174.3.213:55282 - - [22/Nov/2014 07:12:26] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/robots.txt/images'
+
+199.59.148.210:47987 - - [22/Nov/2014 07:51:08] "HTTP/1.1 GET /robots.txt" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/index.html/images'
+
+199.59.148.210:47987 - - [22/Nov/2014 07:51:08] "HTTP/1.1 GET /index.html" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/tmUnblock.cgi/images'
+
+206.248.192.83:52261 - - [22/Nov/2014 08:17:48] "HTTP/1.1 GET /tmUnblock.cgi" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/tmUnblock.cgi/images'
+
+216.238.250.106:2852 - - [22/Nov/2014 11:39:50] "HTTP/1.1 GET /tmUnblock.cgi" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/kaka/kak/images'
+
+140.117.169.188:52424 - - [22/Nov/2014 14:20:28] "HTTP/1.1 GET /kaka/kak/ka.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+140.117.169.188:52523 - - [22/Nov/2014 14:20:28] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+140.117.169.188:52623 - - [22/Nov/2014 14:20:29] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+140.117.169.188:52719 - - [22/Nov/2014 14:20:30] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/tmUnblock.cgi/images'
+
+149.129.10.8:49692 - - [22/Nov/2014 17:05:24] "HTTP/1.1 GET /tmUnblock.cgi" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/robots.txt/images'
+
+199.16.156.124:60516 - - [22/Nov/2014 17:10:54] "HTTP/1.1 GET /robots.txt" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/index.html/images'
+
+199.16.156.124:60516 - - [22/Nov/2014 17:10:54] "HTTP/1.1 GET /index.html" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/gngn/gng/images'
+
+198.50.140.20:52793 - - [22/Nov/2014 17:30:53] "HTTP/1.1 GET /gngn/gng/gn.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+198.50.140.20:52839 - - [22/Nov/2014 17:30:54] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+198.50.140.20:52890 - - [22/Nov/2014 17:30:54] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+198.50.140.20:52936 - - [22/Nov/2014 17:30:54] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+86.135.122.146:60404 - - [22/Nov/2014 18:05:23] "HTTP/1.1 GET /" - 200 OK
+86.135.122.146:60404 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /static/css/style.css" - 304 Not Modified
+86.135.122.146:60404 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /static/js/imagefunctions.js" - 304 Not Modified
+86.135.122.146:60406 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /static/users/sunra/images/Cesar-Manrique-c-Alastair-Philip-Wiper-17.jpg" - 304 Not Modified
+86.135.122.146:60404 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /static/users/inpala/images/tumblr_neyzpin1ry1qjpeg7o1_1280.jpg" - 304 Not Modified
+86.135.122.146:60407 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /static/users/damarus/images/Alethiometer1.jpg" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 220, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images",    f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/favicon.ico/images'
+
+86.135.122.146:60404 - - [22/Nov/2014 18:05:25] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+86.135.122.146:60404 - - [22/Nov/2014 18:05:30] "HTTP/1.1 GET /inpala" - 200 OK
+86.135.122.146:60404 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/js/nav.js" - 200 
+86.135.122.146:60406 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/tumblr_neyzpin1ry1qjpeg7o1_1280.jpg" - 200 
+86.135.122.146:60404 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/Ssr0MDE.jpg" - 200 
+86.135.122.146:60407 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/clnp.lightening_20141016_0012_edit_final_1048.jpg" - 200 
+86.135.122.146:60412 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/NaX4Zr7.jpg" - 200 
+86.135.122.146:60414 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/tumblr_neulffYPFC1qa0195o1_1280.jpg" - 200 
+86.135.122.146:60413 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/b117ujG.jpg" - 200 
+86.135.122.146:60406 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/Riedel Imme R100 Motorbike.jpg" - 200 
+86.135.122.146:60415 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/CFlskYp.jpg" - 200 
+86.135.122.146:60416 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/xCvdyR6.jpg" - 200 
+86.135.122.146:60417 - - [22/Nov/2014 18:05:31] "HTTP/1.1 GET /static/users/inpala/images/thumbs/e4dK8cH.png" - 200 
+86.135.122.146:60404 - - [22/Nov/2014 18:05:32] "HTTP/1.1 GET /static/users/inpala/images/thumbs/tumblr_nd1pv0H2x81szhg2eo1_500.jpg" - 200 
+86.135.122.146:60412 - - [22/Nov/2014 18:05:35] "HTTP/1.1 GET /static/users/inpala/images/thumbs/tumblr_ne6n9ijzuv1r20fq5o1_1280.jpg" - 200 
+86.135.122.146:60407 - - [22/Nov/2014 18:05:37] "HTTP/1.1 GET /static/users/inpala/images/thumbs/tumblr_neq7eiBWsm1s5qhggo4_1280.jpg" - 200 
+86.135.122.146:60414 - - [22/Nov/2014 18:05:37] "HTTP/1.1 GET /static/users/inpala/images/thumbs/Screen-Shot-2014-11-07-at-7.43.46-AM-660x439.png" - 200 
+86.135.122.146:60415 - - [22/Nov/2014 18:05:38] "HTTP/1.1 GET /static/users/inpala/images/thumbs/Screen-Shot-2014-11-07-at-7.41.21-AM-660x444.png" - 200 
+86.135.122.146:60418 - - [22/Nov/2014 18:05:40] "HTTP/1.1 GET /" - 200 OK
+86.135.122.146:61205 - - [22/Nov/2014 19:29:41] "HTTP/1.1 GET /" - 200 OK
+86.135.122.146:61205 - - [22/Nov/2014 19:29:46] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/vfvf/vfv/images'
+
+200.93.127.28:54392 - - [22/Nov/2014 21:12:22] "HTTP/1.1 GET /vfvf/vfv/vf.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+200.93.127.28:54704 - - [22/Nov/2014 21:12:22] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+200.93.127.28:54767 - - [22/Nov/2014 21:12:23] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+200.93.127.28:54828 - - [22/Nov/2014 21:12:23] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/acac/aca/images'
+
+61.185.123.110:58468 - - [23/Nov/2014 08:09:22] "HTTP/1.1 GET /acac/aca/ac.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/phpMyAdmin/scripts/images'
+
+61.185.123.110:58740 - - [23/Nov/2014 08:09:23] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/pma/scripts/images'
+
+61.185.123.110:59013 - - [23/Nov/2014 08:09:24] "HTTP/1.1 GET /pma/scripts/setup.php" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 236, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 227, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 409, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 384, in handle_class
+    return tocall(*args)
+  File "./auto.py", line 319, in GET
+    folderlist = [f for f in os.listdir(os.path.join(USERSFOLDER, user, "images")) if os.path.isdir(os.path.join(USERSFOLDER, user, "images", f)) == True and f not in ("thumbs")]
+OSError: [Errno 2] No such file or directory: 'static/users/myadmin/scripts/images'
+
+61.185.123.110:59280 - - [23/Nov/2014 08:09:25] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 500 Internal Server Error
+125.64.35.67:40044 - - [23/Nov/2014 09:00:15] "HTTP/1.1 GET zc/chs/img/body.png" - 404 Not Found
+104.192.0.19:48164 - - [23/Nov/2014 09:52:42] "HTTP/1.1 GET /" - 200 OK

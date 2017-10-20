@@ -1,0 +1,36 @@
+$def with (pagetitle, loggedin, username, datejoined, imagesperpage, verified, message)
+
+$var pagetitle = pagetitle
+$var loggedin = loggedin
+
+<div class="container">
+
+<p>Hello $username! You joined us on $datejoined.</p>
+
+$if verified == 0:
+    <p>Your account is not verified. <br> Please verify your account using the link emailed to you when you joined moodboard. <br>
+        If you would like to send a new email please click <a href="resendverification">here</a>.</p>
+
+<form action="account" method="POST">
+    <fieldset>
+        <label for="ippselect">Images Per Page: </label>
+        <select name="ippselect" id="ippselect">
+            <option value="$imagesperpage">$imagesperpage</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select><br><br>
+        <input type="submit" value="Save">
+    </fieldset>
+</form>
+
+<p><a href="deleteaccount">Delete Account</a></p>
+<p><a href="thumbnails">Generate Thumbnails</a></p>
+
+<div id="client">
+    <a href="static/client/MoodboardClient.zip">Download Client</a><br>
+    <p>To use the client, you must have Python installed. Unzip the client, edit the file to include your image folder then run "python client.py".</p>
+</div>
+
+</div>

@@ -1,0 +1,16 @@
+$def with (userslist, pagetitle, session, message)
+
+$var pagetitle = pagetitle
+$var loggedin = session.loggedin
+
+<div id="userslist">
+$for user in userslist:
+    <div class="usertile">
+
+        <a href="$user[0]"><img src="$user[1]" alt=""></a>
+        <div class="userlabel">
+            <a href="$user[0]">$user[0]</a>
+            <img data-user="$user[0]" class="remove-favourite" src="/static/img/delete.png" alt="Remove Favourite">
+        </div>
+    </div>
+</div>

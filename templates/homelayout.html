@@ -1,0 +1,31 @@
+$def with (content)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moodboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<script src="/static/js/jquery-2.1.4.min.js"></script>
+<script src="/static/js/imagefunctions.js"></script>
+</head>
+<body>
+<div id="title">
+    <h1><a href="/">moodboard</a></h1>
+    <h2>$content.pagetitle</h2>
+</div>
+$:content
+
+<div id="footer">
+the image hoarder's paradise
+
+<div id="actionbuttons">
+    $if content.loggedin == True:
+        <a href="/favourites">favourites</a> • <a href="/account">account</a> • <a href="/logout">logout</a>
+    $else:
+        <a href="newuser">join</a> • <a href="login">login</a>
+</div>
+
+</div>
+
+</body>
+</html>
